@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    
+    background-color: rgb(138, 171, 255, .0);
+    /*
+    color: rgb(252, 255, 169);
+    background-color: #fff;
+    color: #000;
+    */
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+}
+
+header {
+    /* text-align: center;  */
+    padding: 5%;
+}
+
+#colors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#colors > * {
+    flex: 2 0 130px;
+    margin: 5%;
+    padding: 2.5%;
+    border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+    #colors {
+        flex-direction: column;
+    }
+}
+
+.color-show {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.color-card {
+    transition: box-shadow .1s !important;
+    text-align: center;
+} 
+
+.color-card:hover {
+    box-shadow: -5px 5px 11px rgba(33,33,33,.2) !important;
+} 
+
+.color-code {
+    font-weight: 300;
+}
+
+.theme {
+    margin-top: 6%;
+    color: rgb(255, 106, 98);
+}
+
+#logo {
+    margin: 5%;
+}
+
+.copied {
+    animation-name: hide;
+    animation-duration: 0.5s;
+}
+
+@keyframes hide {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#add-color {
+    background-color: rgb(80, 210, 110);
+    color: white;
+}
