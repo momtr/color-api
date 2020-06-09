@@ -41,6 +41,7 @@ function copy(text, id) {
         } catch(err) {
             console.log(err);
         }
+        $('textarea').hide();
         return;
     }   
     navigator.clipboard.writeText(text).then(() => copied(id));

@@ -7,7 +7,7 @@ body {
     background-color: #fff;
     color: #000;
     */
-    font-family: 'Proxima Nova';
+    font-family: proxima-nova, sans-serif;
     font-weight: bold;
 }
 
