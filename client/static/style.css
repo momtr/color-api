@@ -85,3 +85,8 @@ footer {
     margin: 5%;
     font-weight: 200;
 }
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+}
