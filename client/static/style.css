@@ -79,3 +79,9 @@ header {
     background-color: rgb(80, 210, 110);
     color: white;
 }
+
+footer {
+    text-align: center;
+    margin: 5%;
+    font-weight: 200;
+}
