@@ -16,8 +16,8 @@ app.get('/docs', (req, res) => {
     res.sendFile(`${__dirname}/client/views/docs.html`);
 });
 
-app.get('/colors/:id', (req, res) => {
-    res.sendFile(`${__dirname}/client/views/color.html`);
+app.get('*', (req, res) => {
+    res.sendFile(`${__dirname}/client/views/fileNotFound.html`)
 })
 
 const port = process.env.PORT || 3000;

@@ -51,6 +51,21 @@ router.get('/colors', async (req, res, next) => {
     });
 });
 
+/** get random color */
+router.get('/colors/random', async (req, res, next) => {
+    /** get colors */
+    let colors = await db.getData('colors');
+    let keys = Object.keys(colors);
+    /** send them to the client */
+    res.send({
+        status: 'success',
+        message: `🚀 random color given`,
+        data: {
+            color: colors[keys[Math.floor(Math.random() * (keys.length - 1))]]
+        }
+    });
+});
+
 /** get colors of a certain category */
 router.get('/colors/categories/:category', (req, res, next) => {
 
