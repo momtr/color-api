@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/client/views/index.html`);
 });
 
+app.get('/docs', (req, res) => {
+    res.sendFile(`${__dirname}/client/views/docs.html`);
+});
+
 app.get('/colors/:id', (req, res) => {
     res.sendFile(`${__dirname}/client/views/color.html`);
 })

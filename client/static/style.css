@@ -82,11 +82,20 @@ header {
 
 footer {
     text-align: center;
-    margin: 5%;
-    font-weight: 200;
+    padding: 5%;
+    margin-top: 5%;
+    font-weight: bold;
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 800px;
+}
+
+.links {
+    color: rgb(138, 171, 255);
+}
+
+.links a {
+    color: rgb(138, 171, 255);
 }
